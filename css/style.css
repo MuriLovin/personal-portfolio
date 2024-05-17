@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+html {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5) url("../public/technology-8280863_1920.jpg")
+    no-repeat;
+}
+
+html::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  position: relative;
+}
+
+menu {
+  margin: auto;
+  width: 70%;
+}
+
+menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  font-size: 1.5rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: #333;
+  border: solid 0.5rem #333;
+  border-radius: 0.5rem;
+}
+
+menu ul li {
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+menu ul li:hover {
+  background: #444;
+  transform: scale(1.1);
+}
+
+.menu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.content > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#about-me,
+#formation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  font-weight: bold;
+  gap: 2rem;
+}
+
+#portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  margin: auto;
+  gap: 2rem;
+}
+
+.formation-info {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.formation-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formation-desc span {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.formation-desc small {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.formation-logo {
+    width: 6rem;
+    height: 6rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #333;
+}
+
+textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #333;
+}
+
+button {
+  align-self: center;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 0.1rem #333;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+button:active {
+  background-color: #555;
+}
