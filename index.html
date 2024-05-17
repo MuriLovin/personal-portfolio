@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MuriLovin</title>
+  </head>
+  <body>
+    <main>
+      <menu>
+        <ul>
+          <li>
+            <a class="menu-link" href="#about-me">Sobre Mim</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#formation" target="_top">Formação</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#portfolio" target="_top">Portfólio</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#contact" target="_top">Contato</a>
+          </li>
+        </ul>
+      </menu>
+      <div class="content">
+        <div id="about-me">
+          <p>
+            Me chamo Murilo Silva, tenho 22 anos e nasci em Salvador, Bahia,
+            Brasil, onde vivo até os dias atuais
+          </p>
+          <p>
+            Sou programador a 2 anos, estou sempre em busca de novos desafios e
+            de aprender novas tecnologias e linguagens de programação
+          </p>
+        </div>
+        <div id="formation">
+          <div class="formation-info">
+            <img class="formation-logo" src="public/if.jpeg" alt="ifba logo" />
+            <div class="formation-desc">
+              <p>IFBA - Instituto Federal da Bahia</p>
+              <span>Ensino Médio, Técnico em Eletrotécnica</span>
+              <small>jul de 2027 - dez de 2021</small>
+            </div>
+          </div>
+          <div class="formation-info">
+            <img
+              class="formation-logo"
+              src="public/uninter.png"
+              alt="ifba logo"
+            />
+            <div class="formation-desc">
+              <p>UNINTER - Centro Universitário internacional</p>
+              <span
+                >Curso superior de tecnologia (CST), Análise e Desenvolvimento
+                de Sistemas</span
+              >
+              <small>Ago de 2022</small>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio">
+          <div>
+            <h2>
+              <a href="https://github.com/MuriLovin/whereIs-my-pizza"
+                >Where is my pizza:</a
+              >
+            </h2>
+            <p>API a ser consumida por um cliente front-end para pedir pizza</p>
+          </div>
+          <div>
+            <h2>
+              <a href="https://github.com/MuriLovin/health-finder"
+                >Health finder</a
+              >
+            </h2>
+            <p>
+              Heath finder é um aplicativo web para facilitar a busca por
+              empresas de saúde
+            </p>
+          </div>
+          <div>
+            <h2>
+              <a href="https://github.com/MuriLovin/fin-control">
+                Fin control
+              </a>
+            </h2>
+            <p>API para criar aplicativos de gerenciamento financeiro</p>
+          </div>
+          <div>
+            <h2>
+              <a href="https://github.com/MuriLovin/time-converter"
+                >Time converter</a
+              >
+            </h2>
+            <p>
+              Aplicativo de linha de comando projetado para converter um horário
+              no formato AM/PM de 12 horas para horário militar (24 horas)
+            </p>
+          </div>
+          <div>
+            <h2>
+              <a
+                href="https://github.com/MuriLovin/py-little-programs/tree/main/brazilian-lunch"
+                >Brazilian lunch</a
+              >
+              <p>
+                Aplicativo simples de restaurante escrito em Python. O
+                aplicativo simula um restaurante especializado em feijoada, que
+                é um almoço típico brasileiro
+              </p>
+            </h2>
+          </div>
+          <div>
+            <h2>
+              <a
+                href="https://github.com/MuriLovin/py-little-programs/tree/main/inventory-control"
+                >Inventory Control</a
+              >
+            </h2>
+            <p>Aplicativo simples de controle de estoque escrito em Python</p>
+          </div>
+          <div>
+            <h2>
+              <a
+                href="https://github.com/MuriLovin/py-little-programs/tree/main/sales-simulator"
+                >Sales Simulator</a
+              >
+            </h2>
+            <p>
+              Aplicativo simples de simulador de vendas. Este aplicativo é
+              basicamente uma forma de implementar uma calculadora de descontos.
+            </p>
+          </div>
+          <div>
+            <h2>
+              <a
+                href="https://github.com/MuriLovin/py-little-programs/tree/main/simple-pizzeria"
+                >Simple Pizzeria</a
+              >
+              <p>
+                Aplicativo que simula uma pizzaria, mas com alguns sabores
+                especificos
+              </p>
+            </h2>
+          </div>
+        </div>
+        <div id="contact">
+          <form action="send-email.php" method="post">
+            <div class="form-control">
+              <label for="name">Nome:</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-control">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-control">
+              <label for="message">Mensagem:</label>
+              <textarea
+                name="message"
+                id="message"
+                required
+                rows="8"
+              ></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
