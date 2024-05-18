@@ -4,63 +4,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>MuriLovin</title>
+    <title>MuriLovin Portfolio</title>
   </head>
   <body>
     <main>
+      <!-- Menu de navegação principal -->
       <menu>
-        <ul>
-          <li>
-            <a class="menu-link" href="#about-me">Sobre Mim</a>
-          </li>
-          <li>
-            <a class="menu-link" href="#formation" target="_top">Formação</a>
-          </li>
-          <li>
-            <a class="menu-link" href="#portfolio" target="_top">Portfólio</a>
-          </li>
-          <li>
-            <a class="menu-link" href="#contact" target="_top">Contato</a>
-          </li>
-        </ul>
+        <li>
+          <a class="menu-link" href="#about-me">Sobre Mim</a>
+        </li>
+        <li>
+          <a class="menu-link" href="#formation" target="_top">Formação</a>
+        </li>
+        <li>
+          <a class="menu-link" href="#portfolio" target="_top">Portfólio</a>
+        </li>
+        <li>
+          <a class="menu-link" href="#contact" target="_top">Contato</a>
+        </li>
       </menu>
+
+      <!-- Conteúdo principal: cada link do menu está relacionado a uma seção principal -->
       <div class="content">
-        <div id="about-me">
+        <section id="about-me">
           <p>
-            Me chamo Murilo Silva, tenho 22 anos e nasci em Salvador, Bahia,
-            Brasil, onde vivo até os dias atuais
+            Meu nome é Murilo Santana Silva, tenho 22 anos e nasci em Salvador,
+            Bahia, Brasil, onde resido até hoje. Desde jovem, sempre estive
+            ligado à tecnologia, inicialmente através dos games. No entanto, foi
+            no primeiro ano do ensino médio que tive meu primeiro contato direto
+            com a programação, utilizando Pascal na disciplina de Informática.
+            Embora estivesse cursando eletrotécnica na época, fiquei fascinado
+            pelo que aprendi, mas decidi continuar no curso técnico de
+            eletrotécnica. No entanto, no último ano do curso, percebi que
+            aquela não era a carreira que eu desejava seguir para o resto da
+            minha vida. Foi então que decidi migrar para a área de tecnologia e
+            comecei a estudar programação por conta própria. Minha jornada
+            iniciou-se com JavaScript, através do bootcamp da IGTI, onde aprendi
+            os fundamentos da programação e desenvolvimento web.
           </p>
           <p>
-            Sou programador a 2 anos, estou sempre em busca de novos desafios e
-            de aprender novas tecnologias e linguagens de programação
+            Durante a pandemia de COVID-19, mergulhei de cabeça na área de TI,
+            buscando uma oportunidade devido à alta demanda por profissionais.
+            Comecei a estudar Python, onde aprendi a criar aplicativos de linha
+            de comando e manipular arquivos. Em seguida, me dediquei ao estudo
+            de PHP, desenvolvendo habilidades na criação de aplicativos web com
+            banco de dados. Continuei minha trajetória de aprendizado com C#,
+            adquirindo conhecimentos na criação de aplicativos desktop e web.
+            Por fim, estudei Java, ampliando minha capacidade de desenvolver
+            tanto para desktop quanto para web. Paralelamente, aperfeiçoei
+            minhas habilidades em HTML, CSS e JavaScript para criação de
+            aplicativos web.
           </p>
-        </div>
-        <div id="formation">
-          <div class="formation-info">
-            <img class="formation-logo" src="public/if.jpeg" alt="ifba logo" />
-            <div class="formation-desc">
-              <p>IFBA - Instituto Federal da Bahia</p>
-              <span>Ensino Médio, Técnico em Eletrotécnica</span>
-              <small>jul de 2027 - dez de 2021</small>
+          <p>
+            Em 2021, tive minha primeira experiência profissional como
+            desenvolvedor web, trabalhando com PHP (Laravel), JavaScript
+            (Node.js), React, TypeScript, HTML e CSS. Desde então, me mantenho
+            atualizado com as tecnologias mais recentes e continuo estudando
+            constantemente.
+          </p>
+          <p>
+            Em 2022, iniciei o curso de Análise e Desenvolvimento de Sistemas na
+            UNINTER, onde espero me formar em 2025. Após a graduação, pretendo
+            continuar meus estudos em uma pós-graduação. Atualmente, possuo três
+            anos de experiência como desenvolvedor web e estou continuamente
+            expandindo meus conhecimentos em diversas áreas da tecnologia.
+          </p>
+        </section>
+        <section id="formation">
+          <div class="education">
+            <div class="formation-info">
+              <img
+                class="formation-logo"
+                src="public/if.jpeg"
+                alt="ifba logo"
+              />
+              <div class="formation-desc">
+                <p>IFBA - Instituto Federal da Bahia</p>
+                <span>Ensino Médio, Técnico em Eletrotécnica</span>
+                <small>jul de 2027 - dez de 2021</small>
+              </div>
+            </div>
+            <div class="formation-info">
+              <img
+                class="formation-logo"
+                src="public/uninter.png"
+                alt="uninter logo"
+              />
+              <div class="formation-desc">
+                <p>UNINTER - Centro Universitário internacional</p>
+                <span
+                  >Curso superior de tecnologia (CST), Análise e Desenvolvimento
+                  de Sistemas</span
+                >
+                <small>Ago de 2022</small>
+              </div>
             </div>
           </div>
-          <div class="formation-info">
-            <img
-              class="formation-logo"
-              src="public/uninter.png"
-              alt="ifba logo"
-            />
-            <div class="formation-desc">
-              <p>UNINTER - Centro Universitário internacional</p>
-              <span
-                >Curso superior de tecnologia (CST), Análise e Desenvolvimento
-                de Sistemas</span
-              >
-              <small>Ago de 2022</small>
+          <h2>Formações complementares</h2>
+          <div class="complementary-training">
+            <div class="formation-info">
+              <img
+                class="formation-logo"
+                src="public/aluracursos_logo.jpeg"
+                alt="alura logo"
+              />
+              <div class="formation-desc">
+                <p>Alura</p>
+                <span>Rest com NodeJS: API com Express e MySQL</span>
+                <small>Nov de 2021</small>
+              </div>
+            </div>
+            <div class="formation-info">
+              <img
+                class="formation-logo"
+                src="public/aluracursos_logo.jpeg"
+                alt="alurea logo"
+              />
+              <div class="formation-desc">
+                <p>Alura</p>
+                <span>Lumen: API Rest com o Micro-framework do Laravel</span>
+                <small>Jan de 2022</small>
+              </div>
+            </div>
+            <div class="formation-info">
+              <img
+                class="formation-logo"
+                src="public/aluracursos_logo.jpeg"
+                alt="alura logo"
+              />
+              <div class="formation-desc">
+                <p>Alura</p>
+                <span>PHP e PDO: trabalhando com bancos de dados</span>
+                <small>Nov de 2021</small>
+              </div>
+            </div>
+            <div class="formation-info">
+              <img
+                class="formation-logo"
+                src="public/aluracursos_logo.jpeg"
+                alt="alura logo"
+              />
+              <div class="formation-desc">
+                <p>Alura</p>
+                <span>Formação PHP</span>
+                <small>Jan de 2022</small>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="portfolio">
+        </section>
+        <section id="portfolio">
           <div>
             <h2>
               <a href="https://github.com/MuriLovin/whereIs-my-pizza"
@@ -145,9 +237,9 @@
               </p>
             </h2>
           </div>
-        </div>
-        <div id="contact">
-          <form action="send-email.php" method="post">
+        </section>
+        <section id="contact">
+          <form class="contact-form">
             <div class="form-control">
               <label for="name">Nome:</label>
               <input type="text" name="name" id="name" required />
@@ -166,8 +258,11 @@
               ></textarea>
             </div>
             <button type="submit">Enviar</button>
+            <span class="contact-success-feedback"
+              >Formulário enviado com sucesso!</span
+            >
           </form>
-        </div>
+        </section>
       </div>
     </main>
 
