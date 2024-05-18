@@ -1,7 +1,15 @@
+/* Estilos printipais do site */
+/* A maior parte das animações e transições controladas pelo script, são definidas aqui */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --button-primary: #333;
+  --button-secondary: #444;
+  --button-wait-feedback: #555;
 }
 
 main {
@@ -17,16 +25,33 @@ html {
   position: relative;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5) url("../public/technology-8280863_1920.jpg")
-    no-repeat;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-html::before {
-  content: "";
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+@keyframes success-feedback {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.feedback-show {
+  animation: success-feedback 5s;
+}
+
+.contact-success-feedback {
+  text-align: center;
+  color: rgb(6, 249, 6);
+  opacity: 0;
+  visibility: hidden;
 }
 
 body {
@@ -34,30 +59,26 @@ body {
 }
 
 menu {
-  margin: auto;
-  width: 70%;
-}
-
-menu ul {
   display: flex;
   justify-content: center;
   gap: 4rem;
   font-size: 1.5rem;
   list-style-type: none;
-  margin: 0;
   padding: 1rem;
   overflow: hidden;
   background-color: #333;
   border: solid 0.5rem #333;
   border-radius: 0.5rem;
+  margin: auto;
+  width: 70%;
 }
 
-menu ul li {
+menu li {
   padding: 0.5rem;
   border-radius: 1rem;
 }
 
-menu ul li:hover {
+menu li:hover {
   background: #444;
   transform: scale(1.1);
 }
@@ -67,7 +88,7 @@ menu ul li:hover {
   color: white;
 }
 
-.content > div {
+.content > section {
   position: absolute;
   top: 0;
   left: 0;
@@ -76,22 +97,36 @@ menu ul li:hover {
 }
 
 #about-me,
-#formation {
+#formation .education,
+#formation .complementary-training {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  /* flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   font-weight: bold;
   gap: 2rem;
 }
 
+#formation h2 {
+  margin: 2rem;
+}
+
+#about-me {
+  font-size: 1.5rem;
+}
+
 #portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   justify-content: center;
+}
+
+#portfolio p {
+  font-size: 1.3rem;
+}
+
+#portfolio div h2 {
+  font-size: 1.8rem;
 }
 
 #contact form {
@@ -104,7 +139,7 @@ menu ul li:hover {
 
 .formation-info {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   font-size: 1.5rem;
   gap: 1rem;
   padding: 2rem;
@@ -117,18 +152,18 @@ menu ul li:hover {
 }
 
 .formation-desc span {
-    font-size: 1.1rem;
-    font-weight: normal;
+  font-size: 1.1rem;
+  font-weight: normal;
 }
 
 .formation-desc small {
-    font-size: 0.8rem;
-    color: #aaa;
+  font-size: 0.8rem;
+  color: #aaa;
 }
 
 .formation-logo {
-    width: 6rem;
-    height: 6rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 .form-control {
