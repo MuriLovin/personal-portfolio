@@ -22,7 +22,6 @@ window.addEventListener("load", function () {
     if (!section) {
       window.location.hash = "#about-me";
       section = "#about-me";
-      return;
     }
 
     document.querySelectorAll(".content > section").forEach(function (element) {
